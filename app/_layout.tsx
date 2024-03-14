@@ -49,8 +49,9 @@ function RootLayoutNav() {
     <TamaguiProvider config={config} defaultTheme={colorScheme as any}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <Stack>
+          {/*<Stack.Screen name="(tabs)" options={{ headerShown: false }} />*/}
           <Stack.Screen name="app" options={{ headerShown: false }} />
-          <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+          {/*<Stack.Screen name="modal" options={{ presentation: 'modal' }} />*/}
         </Stack>
       </ThemeProvider>
     </TamaguiProvider>
